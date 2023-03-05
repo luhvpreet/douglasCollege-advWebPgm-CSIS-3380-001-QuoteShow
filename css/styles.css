@@ -1,0 +1,145 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-image: url('../images/img1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: rgb(255, 255, 255, 0);
+  border-radius: 100px 0px 100px 0px;
+  border-top: 10px dashed rgb(53,54,50);
+  border-bottom: 10px dashed rgb(53,54,50);
+  width: 70%;    
+  margin-top: 6%;
+  margin-bottom: 2%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+  
+/* Slides */
+.mySlides {
+  width: auto;
+  display: none;
+  width: 90%;
+  padding-top: 0px;
+  min-height: 100px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.mySlides p{
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 100px 0px 100px 0px;
+  text-align: center;
+  justify-content: center;
+  min-height: 70px;
+}
+
+.mySlidesImg{
+  width: 50%;
+  height: 50%;
+  background-image: url('../images/img1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.mySlidesImg img{
+  width: 90%;
+  margin: auto;
+  display: block;
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: 110px;
+  margin-top: -30px;
+  color: rgb(53,54,50);
+  font-weight: bold;
+  font-size: 200px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  position: absolute;
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover{
+  color: rgb(139,164,206);
+}
+.next:hover {
+  color: rgb(195,129,94);
+}
+  
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+  
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+  
+/* Add an italic font style to all quotes */
+p {font-style: italic;}
+  
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.author a{
+  color: cornflowerblue;
+  background-color: rgba(255, 255, 255, 0.5);
+}
